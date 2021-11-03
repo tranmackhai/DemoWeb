@@ -3,7 +3,10 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
-    --boder-color: #dbdbdb;
+    --border-color: #dbdbdb;
+    --header-height: 120px;
+    --navbar-height: 32px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height))
 }
 
 * {
@@ -35,12 +38,21 @@ html {
 
 /* Animation */
 
-@keyframes hover {
+@keyframes fadeIn {
     from {
         opacity: 0;
     }
     to {
         opacity: 1;
+    }
+}
+
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-form));
+    }
+    to {
+        transform: scale(var(--growth-to));
     }
 }
 
@@ -54,6 +66,7 @@ html {
     bottom: 0;
     left: 0;
     display: flex;
+    animation: fadeIn linear 0.2s;
 }
 
 .modal__overlay {
@@ -64,9 +77,12 @@ html {
 }
 
 .modal__body {
+    --growth-form: 0.7;
+    --growth-form: 0.1;
     margin: auto;
     position: relative;
     z-index: 2;
+    animation: growth linear 0.2s;
 }
 
 
@@ -85,6 +101,7 @@ html {
     color: var(--text-color);
     display: flex;
     align-items: center;
+    line-height: 1.6rem;
     justify-content: center;
 }
 
