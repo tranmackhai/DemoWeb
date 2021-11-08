@@ -157,11 +157,73 @@
                     <div class="header__cart">
                         <div class="header__cart-wrap">
                             <i class="header__cart-icon fas fa-shopping-cart"></i>
-                            <div class="header__cart-list header__cart-list--no-cart">
+                            <span class="header__cart-notice">3</span>
+                            <!-- No cart: header__cart-list--no-cart -->
+                            <div class="header__cart-list">
                                 <img src="/assets/img/no-cart.png" alt="" class="header__cart-no-cart-img">
-                                <span class="header__cart-list-no-cart-msg">
-                                Chưa có sản phẩm 
-                              </span>
+                                <span class="header__cart-list-no-cart-msg">Chưa có sản phẩm </span>
+                                <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                <ul class="header__cart-list-item">
+                                    <!-- Cart item -->
+                                    <li class="header__cart-item">
+                                        <img src="https://adminbeauty.hvnet.vn/Upload/Files/srm-greentea.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Kem dưỡng da innisfree</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">2.000.000đ</span>
+                                                    <span class="header__cart-item-mutiply">X</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    Phân loại: Xanh
+                                                </span>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://www.elle.vn/wp-content/uploads/2019/03/29/nuoc-hoa-mua-he-01.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Nước hoa mùa ELLE</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">6.000.000đ</span>
+                                                    <span class="header__cart-item-mutiply">X</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    Phân loại: Xanh
+                                                </span>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://bannuochoa.vn/wp-content/uploads/2020/09/Nuoc-hoa-CHANEL-N5-Red-Limited-Edition-Vivalust.vn-1.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Nước Hoa CHANEL N°5 RED</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">4.700.000đ</span>
+                                                    <span class="header__cart-item-mutiply">X</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    Phân loại: Giới hạn
+                                                </span>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a href="#" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
                             </div>
                         </div>
                     </div>
@@ -204,29 +266,29 @@
                         <p class="auth-form__policy-text">
                             Bằng việc đăng kí bạn đã đồng ý với điều khoản của Chibi-Shop về
                             <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
-                            <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
-                        </p>
-                    </div>
-                    <div class="auth-form__control">
-                        <button class="btn btn-normal auth-form__control-back">TRỞ LẠI</button>
-                        <button class="btn btn--primary">ĐĂNG KÝ</button>
-                    </div>
-                </div>
-                <div class="auth-form__socials">
-                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn__with-icon">
-                        <i class=" auth-form__socials-icon fab fa-facebook-square"></i>
-                        <span class="auth-form__socials-title">
+                                <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                                </p>
+                            </div>
+                            <div class="auth-form__control">
+                                <button class="btn btn-normal auth-form__control-back">TRỞ LẠI</button>
+                                <button class="btn btn--primary">ĐĂNG KÝ</button>
+                            </div>
+                        </div>
+                        <div class="auth-form__socials">
+                            <a href="" class="auth-form__socials--facebook btn btn--size-s btn__with-icon">
+                                <i class=" auth-form__socials-icon fab fa-facebook-square"></i>
+                                <span class="auth-form__socials-title">
                             Kết nối với Facebook
                         </span>
-                    </a>
-                    <a href="" class="auth-form__socials--google btn btn--size-s btn__with-icon">
-                        <i class="auth-form__socials-icon fab fa-google"></i>
-                        <span class="auth-form__socials-title">
+                            </a>
+                            <a href="" class="auth-form__socials--google btn btn--size-s btn__with-icon">
+                                <i class="auth-form__socials-icon fab fa-google"></i>
+                                <span class="auth-form__socials-title">
                             Kết nối với Google
                         </span>
-                    </a>
-                </div>
-            </div> -->
+                            </a>
+                        </div>
+                    </div> -->
 
     <!-- Login form -->
     <!-- <div class="auth-form">
