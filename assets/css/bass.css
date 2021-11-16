@@ -3,6 +3,7 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --star-gold-color: #ffce3e;
     --border-color: #dbdbdb;
     --header-height: 120px;
     --navbar-height: 32px;
@@ -20,6 +21,9 @@ html {
     box-sizing: border-box;
 }
 
+
+/* Responsive */
+
 .grid {
     width: 1400px;
     max-width: 100%;
@@ -33,6 +37,29 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+
+/* Test */
+
+.grid__colunm-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+
+.grid__colunm-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+
+.grid__colunm-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.3333%;
 }
 
 
@@ -89,7 +116,7 @@ html {
 /* Button style */
 
 .btn {
-    min-width: 140px;
+    min-width: 130px;
     height: 34px;
     text-decoration: none;
     border: none;
@@ -99,10 +126,11 @@ html {
     outline: none;
     cursor: pointer;
     color: var(--text-color);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     line-height: 1.6rem;
     justify-content: center;
+    background-color: var(--white-color);
 }
 
 .btn.btn-normal:hover {
@@ -124,4 +152,96 @@ html {
     color: #949494;
     background-color: #c3c3c3;
     cursor: default;
+}
+
+
+/* Selection */
+
+.select-input {
+    z-index: 1;
+    position: relative;
+    min-width: 200px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.select-input:hover .select-input__list {
+    display: block;
+}
+
+.select-input__label {
+    font-size: 1.4rem;
+}
+
+.select-input__icon {
+    font-size: 1.4rem;
+    color: #6b6a6a;
+    position: relative;
+    top: 1px;
+}
+
+.select-input__list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25px;
+    border-radius: 2px;
+    list-style: none;
+    background-color: var(--white-color);
+    padding: 10px 16px;
+    display: none;
+}
+
+.select-input__link {
+    color: var(--text-color);
+    display: block;
+    padding: 5px 0;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.select-input__link:hover {
+    color: var(--primary-color);
+}
+
+
+/* Pagination */
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.pagination-item {
+    margin: 0 14px;
+}
+
+.pagination-item__link {
+    --height: 30px;
+    display: block;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 350;
+    color: #939393;
+    min-width: 40px;
+    height: var(--height);
+    line-height: var(--height);
+    text-align: center;
+    border-radius: 2px;
+}
+
+.pagination-item--active .pagination-item__link {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.pagination-item--active .pagination-item__link:hover {
+    background-color: #ed5c3f;
 }
